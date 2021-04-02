@@ -4,14 +4,14 @@ import Menu from "./components/Menu/Menu";
 
 function App() {
 	return (
-		<>
-			<Router>
-				<Menu />
-				{/* <Switch>
+		<Router>
+			<Menu />
+			<div className="App">
+				<Switch>
 					<Route path="/" />
-				</Switch> */}
-			</Router>
-		</>
+				</Switch>
+			</div>
+		</Router>
 	);
 }
 

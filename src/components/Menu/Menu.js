@@ -4,7 +4,6 @@ import * as AiIcons from "react-icons/ai";
 import {Link} from "react-router-dom";
 import {MenuData} from "./MenuData";
 import "./Menu.css";
-import {IconContext} from "react-icons";
 
 function Menu() {
 	const [menu, setMenu] = useState(false);
@@ -18,6 +17,7 @@ function Menu() {
 				<Link to="#" className="menu-bars">
 					<FaIcons.FaBars onClick={showMenu} />
 				</Link>
+				<p className="menu-logo">This will be a logo</p>
 			</div>
 			<nav className={menu ? "nav-menu active" : "nav-menu"}>
 				<ul className="nav-menu-items" onClick={showMenu}>
