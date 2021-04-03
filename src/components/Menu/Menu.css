@@ -33,6 +33,7 @@
 }
 .menu-logo {
 	position: absolute;
+	height: 150px;
 }
 
 .nav-menu.active {

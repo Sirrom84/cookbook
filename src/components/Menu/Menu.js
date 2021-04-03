@@ -17,7 +17,7 @@ function Menu() {
 				<Link to="#" className="menu-bars">
 					<img src="/images/menu.svg" onClick={showMenu} />
 				</Link>
-				<p className="menu-logo">LOGO HERE</p>
+				<img className="menu-logo" src="/images/main_logo.svg" />
 			</div>
 			<nav className={menu ? "nav-menu active" : "nav-menu"}>
 				<ul className="nav-menu-items" onClick={showMenu}>
