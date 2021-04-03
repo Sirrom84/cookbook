@@ -15,15 +15,20 @@ function Menu() {
 			{/* <IconContext.Provider value={{color: "#fff"}}> */}
 			<div className="navbar">
 				<Link to="#" className="menu-bars">
-					<img src="/images/menu.svg" onClick={showMenu} />
+					<img
+						className="menu-open-bars"
+						src="/images/menu.svg"
+						onClick={showMenu}
+					/>
 				</Link>
 				<img className="menu-logo" src="/images/main_logo.svg" />
+				<h3 className="login">Login</h3>
 			</div>
 			<nav className={menu ? "nav-menu active" : "nav-menu"}>
 				<ul className="nav-menu-items" onClick={showMenu}>
 					<li className="navbar-toggle">
 						<Link to="#" className="menu-bars">
-							<img src="/images/X.svg" />
+							<img className="menu-close" src="/images/X.svg" />
 						</Link>
 					</li>
 					{MenuData.map((item, index) => {
@@ -36,6 +41,11 @@ function Menu() {
 							</li>
 						);
 					})}
+					<img
+						className="active-apple-logo"
+						alt="apple-image"
+						src="/images/menu_back_icon.svg"
+					/>
 				</ul>
 			</nav>
 			{/* </IconContext.Provider> */}
