@@ -15,15 +15,15 @@ function Menu() {
 			{/* <IconContext.Provider value={{color: "#fff"}}> */}
 			<div className="navbar">
 				<Link to="#" className="menu-bars">
-					<FaIcons.FaBars onClick={showMenu} />
+					<img src="/images/menu.svg" onClick={showMenu} />
 				</Link>
-				<p className="menu-logo">This will be a logo</p>
+				<p className="menu-logo">LOGO HERE</p>
 			</div>
 			<nav className={menu ? "nav-menu active" : "nav-menu"}>
 				<ul className="nav-menu-items" onClick={showMenu}>
 					<li className="navbar-toggle">
 						<Link to="#" className="menu-bars">
-							<AiIcons.AiOutlineClose />
+							<img src="/images/X.svg" />
 						</Link>
 					</li>
 					{MenuData.map((item, index) => {

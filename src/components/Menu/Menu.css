@@ -1,17 +1,21 @@
 .navbar {
-	height: 60px;
+	height: 7vh;
+	top: 0;
 	width: 100%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-items: center;
 	background-color: black;
+	flex-direction: row;
 	color: white;
-	flex-wrap: break-word;
+	position: sticky;
+	font-family: "Noto Sans JP", sans-serif;
 }
 
 .menu-bars {
-	padding-left: 10px;
-
+	position: absolute;
+	padding-top: 10px;
+	left: 10px;
 	font-size: 2rem;
 	/* background: black; */
 }
@@ -28,7 +32,7 @@
 	transition: 400ms;
 }
 .menu-logo {
-	padding-left: 40rem;
+	position: absolute;
 }
 
 .nav-menu.active {
@@ -67,10 +71,10 @@
 }
 
 .navbar-toggle {
-	height: 32px;
-	display: flex;
-	padding-left: -20px;
-	justify-content: flex-start;
+	position: absolute;
+	padding-top: 10px;
+	left: 10px;
+	font-size: 2rem;
 }
 
 span {
