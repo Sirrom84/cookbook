@@ -41,11 +41,11 @@ function Menu() {
 							</li>
 						);
 					})}
-					<img
+					{/* <img
 						className="active-apple-logo"
 						alt="apple-image"
 						src="/images/menu_back_icon.svg"
-					/>
+					/> */}
 				</ul>
 			</nav>
 			{/* </IconContext.Provider> */}
