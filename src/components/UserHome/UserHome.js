@@ -20,12 +20,24 @@ export default function UserHome() {
 
 			<nav className={options ? "options-hidden" : "options-showing"}>
 				<ul className="recipe-options-list">
-					<li>Chicken</li>
-					<li>Beef</li>
-					<li>Pork</li>
-					<li>Fish</li>
-					<li>Pasta</li>
-					<li>Favourites</li>
+					<Link to="/chicken">
+						<li>Chicken</li>
+					</Link>
+					<Link path="/beef">
+						<li>Beef</li>
+					</Link>
+					<Link to="/pork">
+						<li>Pork</li>
+					</Link>
+					<Link to="/fish">
+						<li>Fish</li>
+					</Link>
+					<Link to="/pasta">
+						<li>Pasta</li>
+					</Link>
+					<Link to="/favourites">
+						<li>Favourites</li>
+					</Link>
 				</ul>
 			</nav>
 			<p>
