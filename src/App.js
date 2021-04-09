@@ -1,16 +1,14 @@
 import "./App.css";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Menu from "./components/Menu/Menu";
+import Topnav from "./components/Topnav/Topnav.js.js";
 import UserHome from "./components/UserHome/UserHome";
 
 function App() {
 	return (
 		<Router>
-			<Menu />
+			<Topnav />
 			<div className="App">
-				<Switch>
-					<Route path="/" exact component={UserHome} />
-				</Switch>
+				<UserHome />
 			</div>
 		</Router>
 	);
