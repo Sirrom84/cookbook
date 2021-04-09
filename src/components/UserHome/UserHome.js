@@ -18,7 +18,7 @@ export default function UserHome() {
 				</Link>
 			</nav>
 
-			<nav className={options ? "options-hidden" : "options-showing"}>
+			<nav className={`${!options ? "options-hidden" : "options-showing"}`}>
 				<ul className="recipe-options-list">
 					<Link to="/chicken">
 						<li>Chicken</li>
