@@ -13,12 +13,12 @@ export default function UserHome() {
 				<h1 className="recipes-header-text">Recipes</h1>
 				<Link to="#" className="options-toggle">
 					<a onClick={showOptions}>
-						<FaChevronDown />
+						{!options ? <FaChevronDown /> : <FaChevronUp />}
 					</a>
 				</Link>
 			</nav>
 
-			<nav className={`${!options ? "options-hidden" : "options-showing"}`}>
+			<nav className={!options ? "options-hidden" : "options-showing"}>
 				<ul className="recipe-options-list">
 					<Link to="/chicken">
 						<li>Chicken</li>
