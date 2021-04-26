@@ -1,6 +1,4 @@
 import React, {useState} from "react";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
 import {Link} from "react-router-dom";
 import {MenuData} from "./TopnavData";
 import "./Topnav.css";
@@ -19,16 +17,17 @@ function Menu() {
 						className="menu-open-bars"
 						src="/images/menu.svg"
 						onClick={showMenu}
+						alt="open-bars"
 					/>
 				</Link>
-				<img className="menu-logo" src="/images/main_logo.svg" />
+				<img className="menu-logo" src="/images/main_logo.svg" alt="logo" />
 				<h3 className="login">Login</h3>
 			</div>
 			<nav className={menu ? "nav-menu active" : "nav-menu"}>
 				<ul className="nav-menu-items" onClick={showMenu}>
 					<li className="navbar-toggle">
 						<Link to="#" className="menu-bars">
-							<img className="menu-close" src="/images/X.svg" />
+							<img className="menu-close" src="/images/X.svg" alt="closemenu" />
 						</Link>
 					</li>
 					{MenuData.map((item, index) => {
