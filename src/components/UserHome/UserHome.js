@@ -12,28 +12,25 @@ export default function UserHome() {
 			<nav className="recipe-header">
 				<h1 className="recipes-header-text">Recipes</h1>
 				<Link to="#" className="options-toggle">
-					<a onClick={showOptions}>
+					<span onClick={showOptions}>
 						{!options ? <FaChevronDown /> : <FaChevronUp />}
-					</a>
+					</span>
 				</Link>
 			</nav>
 
 			<nav className={!options ? "options-hidden" : "options-showing"}>
 				<ul className="recipe-options-list">
-					<Link to="/chicken">
-						<li>Chicken</li>
+					<Link to="/breakfast">
+						<li>Breakfast</li>
 					</Link>
-					<Link path="/beef">
-						<li>Beef</li>
+					<Link path="/lunch">
+						<li>Lunch</li>
 					</Link>
-					<Link to="/pork">
-						<li>Pork</li>
+					<Link to="/dinner">
+						<li>Dinner</li>
 					</Link>
-					<Link to="/fish">
-						<li>Fish</li>
-					</Link>
-					<Link to="/pasta">
-						<li>Pasta</li>
+					<Link to="/appetizers">
+						<li>Appetizers</li>
 					</Link>
 					<Link to="/favourites">
 						<li>Favourites</li>
